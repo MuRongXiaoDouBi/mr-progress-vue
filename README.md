@@ -1,4 +1,4 @@
-# mr-progress
+# mr-progress-vue
 
 ## 简单demo查看
 
