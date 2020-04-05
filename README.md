@@ -59,7 +59,7 @@ export default {
 <mr-Progress :percentage="20" type="line"/>
 ```
 
-![线性进度条](./images/线性进度条.png)
+![线性进度条](https://s1.ax1x.com/2020/04/05/GDyngA.png)
 
 #### 环形进度条
 
@@ -67,7 +67,7 @@ export default {
 <mr-Progress :percentage="20" type="circle" />
 ```
 
-![环形进度条](./images/环形进度条.png)
+![环形进度条](https://s1.ax1x.com/2020/04/05/GDyMut.png)
 
 ### 进度条内容定制
 
@@ -88,7 +88,7 @@ export default {
 </mr-progress>
 ```
 
-![插槽内容](./images/进度条内容定制1.png)
+![插槽内容](https://s1.ax1x.com/2020/04/05/GDylHf.png)
 
 #### 线性进度条百分比内显
 
@@ -96,7 +96,7 @@ export default {
 <mr-Progress :percentage="percentage" textInside> </mr-Progress>
 ```
 
-![百分比内显](./images/百分比内显.png)
+![百分比内显](https://s1.ax1x.com/2020/04/05/GDyG4g.png)
 
 ### 进度条颜色定制
 
@@ -125,9 +125,9 @@ export default {
 <mr-progress :strokeColor="colorArr" :percentage="percentage" type="circle" />
 ```
 
-![颜色定制](./images/颜色定制.png)
+![颜色定制](https://s1.ax1x.com/2020/04/05/GDyUvn.png)
 
-![颜色定制](./images/颜色定制.gif)
+![颜色定制](https://s1.ax1x.com/2020/04/05/GDy0bV.gif)
 
 ### 进度条宽度定制
 
@@ -138,7 +138,7 @@ export default {
 <mr-progress :width="200" :percentage="percentage" type="circle" />
 ```
 
-![宽度定制](./images/宽度定制.png)
+![宽度定制](https://s1.ax1x.com/2020/04/05/GDyg29.png)
 
 ### 进度条进度线宽度定制
 
@@ -149,7 +149,7 @@ export default {
 <mr-progress :strokeWidth="25" :percentage="percentage" type="circle" />
 ```
 
-![进度线宽度定制](./images/进度线宽度定制.png)
+![进度线宽度定制](https://s1.ax1x.com/2020/04/05/GDy5VK.png)
 
 ### 进度条样式定制
 
@@ -166,7 +166,7 @@ export default {
 <mr-progress :strokeWidth="25" :percentage="percentage" type="circle" strokeLinecap="butt" />
 ```
 
-![样式定制](./images/样式定制.png)
+![样式定制](https://s1.ax1x.com/2020/04/05/GDyH8H.png)
 
 ## mr-progress属性
 
