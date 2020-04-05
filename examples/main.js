@@ -1,8 +1,8 @@
 import Vue from "vue";
 import App from "./App.vue";
-import Progress from '../src/index'
+// import mrProgress from '../src/index'
 
-Vue.use(Progress)
+// Vue.component(mrProgress.name, mrProgress)
 Vue.config.productionTip = false;
 
 new Vue({

@@ -24,8 +24,21 @@
 // main.js Vue入口文件引入
 import mrProgress from 'mr-progress-vue'
 import 'mr-progress-vue/lib/mr-progress.css'
-Vue.use(mrProgress)
+Vue.component(mrProgress.name, mrProgress)
 
+// 组件内使用
+<mrProgress :percentage="20" />
+```
+
+```javascript
+// 组件内引入
+import mrProgress from 'mr-progress-vue'
+import 'mr-progress-vue/lib/mr-progress.css'
+export default {
+    components: {
+        mrProgress,
+    }
+}
 // 组件内使用
 <mrProgress :percentage="20" />
 ```

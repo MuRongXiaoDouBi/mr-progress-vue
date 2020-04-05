@@ -16,67 +16,68 @@
 		<mr-progress :percentage="percentage" type="circle">
 			<span class="percentage">进度：{{ percentage }}</span>
 		</mr-progress>
-    <mr-progress :percentage="percentage" textInside> </mr-progress>
+		<mr-progress :percentage="percentage" textInside> </mr-progress>
 		<button @click="add" class="button">加</button>
 		<button @click="subtract" class="button">减</button>
 		<h2>进度条颜色定制</h2>
-    <mr-progress :strokeColor="color" :percentage="percentage">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :strokeColor="color" :percentage="percentage" type="circle">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
-    <mr-progress :strokeBgColor="color" :percentage="percentage">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :strokeBgColor="color" :percentage="percentage" type="circle">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
-    <mr-progress :strokeColor="colorArr" :percentage="percentage">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :strokeColor="colorArr" :percentage="percentage" type="circle">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
+		<mr-progress :strokeColor="color" :percentage="percentage">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :strokeColor="color" :percentage="percentage" type="circle">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
+		<mr-progress :strokeBgColor="color" :percentage="percentage">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :strokeBgColor="color" :percentage="percentage" type="circle">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
+		<mr-progress :strokeColor="colorArr" :percentage="percentage">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :strokeColor="colorArr" :percentage="percentage" type="circle">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
 		<button @click="add" class="button">加</button>
 		<button @click="subtract" class="button">减</button>
 		<h2>进度条宽度定制</h2>
-    <mr-progress :width="200" :percentage="percentage">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :width="200" :percentage="percentage" type="circle">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
+		<mr-progress :width="200" :percentage="percentage">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :width="200" :percentage="percentage" type="circle">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
 		<button @click="add" class="button">加</button>
 		<button @click="subtract" class="button">减</button>
 		<h2>进度条进度线宽度定制</h2>
-    <mr-progress :strokeWidth="25" :percentage="percentage">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :strokeWidth="25" :percentage="percentage" type="circle">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
+		<mr-progress :strokeWidth="25" :percentage="percentage">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :strokeWidth="25" :percentage="percentage" type="circle">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
 		<button @click="add" class="button">加</button>
 		<button @click="subtract" class="button">减</button>
 		<h2>进度条样式定制</h2>
-    <mr-progress :strokeWidth="25" :percentage="percentage" strokeLinecap="round">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :strokeWidth="25" :percentage="percentage" strokeLinecap="butt">
-      <span class="percentage">{{ percentage }}%</span>
-    </mr-progress>
-    <mr-progress :strokeWidth="25" :percentage="percentage" type="circle" strokeLinecap="round">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
-    <mr-progress :strokeWidth="25" :percentage="percentage" type="circle" strokeLinecap="butt">
-      <span class="percentage">进度：{{ percentage }}</span>
-    </mr-progress>
+		<mr-progress :strokeWidth="25" :percentage="percentage" strokeLinecap="round">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :strokeWidth="25" :percentage="percentage" strokeLinecap="butt">
+			<span class="percentage">{{ percentage }}%</span>
+		</mr-progress>
+		<mr-progress :strokeWidth="25" :percentage="percentage" type="circle" strokeLinecap="round">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
+		<mr-progress :strokeWidth="25" :percentage="percentage" type="circle" strokeLinecap="butt">
+			<span class="percentage">进度：{{ percentage }}</span>
+		</mr-progress>
 		<button @click="add" class="button">加</button>
 		<button @click="subtract" class="button">减</button>
 	</div>
 </template>
 
 <script>
+import mrProgress from '../src';
 export default {
 	name: 'App',
 	data() {
@@ -93,6 +94,9 @@ export default {
 			percentage: 20,
 			strokeLinecap: 'butt',
 		};
+	},
+	components: {
+		mrProgress,
 	},
 	methods: {
 		add() {

@@ -1,6 +1,6 @@
 {
   "name": "mr-progress-vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "The progress component for Vue",
   "main": "lib/mr-progress.umd.min.js",
