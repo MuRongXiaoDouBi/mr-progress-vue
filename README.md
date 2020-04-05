@@ -8,9 +8,9 @@
 
 按步骤执行
 
-`yarn install`
+`npm install` or `yarn install`
 
-`yarn serve`
+`npm run serve` or `yarn serve`
 
 ## 使用方式
 
