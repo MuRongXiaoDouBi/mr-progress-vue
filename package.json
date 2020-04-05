@@ -1,0 +1,37 @@
+{
+  "name": "mr-progress-vue",
+  "version": "0.1.1",
+  "private": false,
+  "description": "The progress component for Vue",
+  "main": "lib/mr-progress.umd.min.js",
+  "keywords": ["Vue", "progress", "component"],
+  "author": {
+    "email": "admin@imuboy.cn",
+    "name": "木荣"
+  },
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name mr-progress --dest lib src/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "prettier": "^1.19.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "_id": "vue-component-progress@0.1.0",
+  "readme": "ERROR: No README data found!"
+}

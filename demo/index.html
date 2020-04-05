@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- import CSS -->
+		<link rel="stylesheet" href="../lib/mr-progress.css" />
+	</head>
+	<body>
+		<div id="app">
+			<mr-progress :stroke-color="color" :percentage="percentage" :stroke-linecap="strokeLinecap">
+				<span class="percentage">进度：{{ percentage }}</span>
+			</mr-progress>
+			<mr-progress :stroke-color="color" :percentage="percentage" :stroke-linecap="strokeLinecap" type="circle">
+				<span class="percentage">进度：{{ percentage }}</span>
+			</mr-progress>
+			<button @click="add">加</button>
+			<button @click="subtract">减</button>
+		</div>
+	</body>
+	<!-- import Vue -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="../lib/mr-progress.umd.min.js"></script>
+	<script>
+		new Vue({
+			el: '#app',
+			data() {
+				return {
+					color: [
+						{ color: '#d0021b', percentage: 0 },
+						{ color: '#f56c6c', percentage: 20 },
+						{ color: '#e6a23c', percentage: 40 },
+						{ color: '#5cb87a', percentage: 60 },
+						{ color: '#1989fa', percentage: 80 },
+						{ color: '#6f7ad3', percentage: 100 },
+					],
+					percentage: 0,
+					strokeLinecap: 'round',
+				};
+			},
+			methods: {
+				add() {
+					if (this.percentage >= 100) {
+						return;
+					}
+					this.percentage += 10;
+				},
+				subtract() {
+					if (this.percentage <= 0) {
+						return;
+					}
+					this.percentage -= 10;
+				},
+			},
+		});
+	</script>
+</html>
